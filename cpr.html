@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPR Methods</title>
+
+    <!-- Bootstrap and Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cpr.css">
+</head>
+<body>
+    <div class="header1">
+        <h2 class="logo">
+            <div class="content">     
+                <div class="logo">
+                   <img  class="center" src="logo.jpg" height="100" width="100">
+                   <span class="logo-text">Pulse Sense</span>
+               </div>
+        </h2>
+        <nav class="navigation">
+            <a href="home PS.html">Home</a>
+            <a href="home PS.html">About Us</a>
+            <a href="contact PS.html">Contact</a>
+            <a href="login PS.html">
+                <button>Register</button></a>
+        </nav>
+    </div class="header1">
+
+    <div class="container">
+        <h1 class="text-center fade-in">CPR Methods</h1>
+        <div class="row">
+            <!-- CPR Step 1 -->
+            <div class="col-md-4">
+                <div class="card fade-in">
+                    <div class="image-container">
+                        <img src="Check responsive.gif" id="1st_img" class="card-img-top" alt="Step 1 Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Step 1: Check for Responsiveness</h5>
+                        <button class="btn btn-primary play-audio" data-audio="audio/step1.mp3" data-toggle="tooltip" data-placement="top" title="Play audio for Step 1">Play Audio</button>
+                        <div class="audio-player">
+                            <audio id="audio-step1" controls>
+                                <source src="AUD-20250206-WA0003" type="audio/m4a">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CPR Step 2 -->
+            <div class="col-md-4">
+                <div class="card fade-in">
+                    <div class="image-container">
+                        <img src="call for help 2.0.jpg"  class="card-img-top" alt="Step 2 Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Step 2: Call for Help</h5>
+                        <button class="btn btn-primary play-audio" data-audio="audio/step2.mp3" data-toggle="tooltip" data-placement="top" title="Play audio for Step 2">Play Audio</button>
+                        <div class="audio-player">
+                            <audio id="audio-step2" controls>
+                                <source src="AUD-20250206-WA0002.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CPR Step 3 -->
+            <div class="col-md-4">
+                <div class="card fade-in">
+                    <div class="image-container">
+                        <img src="Chest compressions.jpg" class="card-img-top" alt="Step 3 Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Step 3: Perform Chest Compressions</h5>
+                        <button class="btn btn-primary play-audio" data-audio="audio/step3.mp3" data-toggle="tooltip" data-placement="top" title="Play audio for Step 3">Play Audio</button>
+                        <div class="audio-player">
+                            <audio id="audio-step3" controls>
+                                <source src="AUD-20250206-WA0004.m4a" type="audio/m4a">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<hr>
+    <div id="video"><iframe width="850" height="450" src="https://www.youtube.com/embed/hizBdM1Ob68" title="Learn How To Do CPR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+    <!-- jQuery, Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Tooltip Initialization
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        // jQuery to handle the audio play button
+        $(document).ready(function() {
+            $('.play-audio').click(function() {
+                var audioId = $(this).data('audio');
+                var audioElement = $('#' + audioId);
+
+                // Toggle audio play and pause
+                if (audioElement[0].paused) {
+                    audioElement[0].play();
+                    $(this).text('Pause Audio');
+                } else {
+                    audioElement[0].pause();
+                    $(this).text('Play Audio');
+                }
+            });
+        });
+    </script>
+
+<footer>
+    <p class="quote">"Your Health, Our Mission."</p>
+    <div class="social-links">
+        <a href="#">Follow us on Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+</body>
+</html>

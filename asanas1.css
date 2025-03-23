@@ -1,0 +1,188 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2A2A2A; /* Dark grey background */
+    color: #fff; /* White text for contrast */
+    line-height: 1.6;
+}
+.header1 {
+    background: linear-gradient(to right, #0f5658, #7ec9c3);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Push logo to left, navigation to right */
+    font-family: sans-serif;
+    height: 15vh;
+}
+
+header {
+    background-color: #333; /* Darker background for header */
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #FFB74D; /* Warm gold */
+    font-family: 'Verdana', sans-serif;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Grid layout for images */
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns in the first row */
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* For the second row, we make the images centered */
+.content .row-2 {
+    grid-template-columns: repeat(2, 1fr); /* Two columns in the second row */
+    justify-items: center; /* Center images in second row */
+}
+
+.asana {
+    background-color: #444; /* Dark background for each asana */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.asana img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 5px solid #FFB74D; /* Warm gold border at the bottom */
+}
+
+.asana h2 {
+    font-size: 1.7rem;
+    color: #FFB74D;
+    margin: 20px 0;
+}
+
+.asana p {
+    font-size: 1rem;
+    color: #bbb;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+/* Hover effect for asana images */
+.asana:hover {
+    transform: scale(1.05); /* Slightly enlarges the image */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
+}
+
+/* Importance Section */
+.importance-section {
+    background-color: #FFB74D; /* Warm gold for the importance section */
+    color: #2A2A2A; /* Dark text for better readability */
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.importance-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.importance-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #0f5658; /* Dark footer */
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #FFB74D; /* Warm gold text */
+}
+
+.navigation {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between navigation links */
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #004d40; /* Change color on hover */
+}
+
+/* Register Button */
+.navigation .btnLogin-popup {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navigation .btnLogin-popup:hover {
+    background-color: #00332a; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+    .header1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation a {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .navigation .btnLogin-popup {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+

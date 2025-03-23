@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet Planner with Calendar</title>
+
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+  
+  <link rel="stylesheet" href="diet_planner.css">
+  <script src='diet_planner.js'></script>
+  <header>
+    <h2 class="logo">
+        <div class="content">     
+            <div class="logo">
+               <img  class="center" src="logo.jpg" height="100" width="100">
+               Pulse Sense 
+           </div>
+    </h2>
+    <nav class="navigation">
+      <a href="home PS.html">Home</a>
+      <a href="home PS.html">About Us</a>
+      <a href="contact PS.html">Contact</a>
+      <a href="login PS.html">Register</a>
+      
+    </nav>
+ </header>
+
+</head>
+<body>
+ <main>
+  <div class="header">
+    <h1>Diet Plan Guider</h1>
+    <p>Plan your meals and track your progress</p>
+</div>
+
+<div class="container">
+  <h2>Add Your Diet Plan</h2>
+        <form action="mailto:shindekuldeep1404@gmail.com" method="post" enctype="text/plain">
+        <label for=" title">Title</label>
+        <input type="text" id="title" placeholder="E.g., Breakfast - Oatmeal" required>
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+        <button type="button" onclick="addtocalender()">Add to Calender</button>
+        </div>
+  </form>
+</div>
+
+
+
+    <div class="meal-plan">
+      <h>Balanced:</h> `
+      <ul>
+          <li>Breakfast: Oatmeal with Almonds</li>
+          <li>Lunch: Grilled Chicken & Veggies</li>
+          <li>Snack: Greek Yogurt with Berries</li>
+          <li>Dinner: Baked Salmon with Brown Rice</li>
+      </ul>
+     <h>Keto:</h>
+      <ul>
+          <li>Breakfast: Scrambled Eggs with Avocado</li>
+          <li>Lunch: Grilled Chicken & Cheese Salad</li>
+          <li>Snack: Nuts & Dark Chocolate</li>
+          <li>Dinner: Steak with Broccoli</li>
+      </ul>
+     <h>Vegan:</h> 
+      <ul>
+          <li>Breakfast: Smoothie Bowl</li>
+          <li>Lunch: Chickpea Salad</li>
+          <li>Snack: Roasted Almonds</li>
+          <li>Dinner: Quinoa & Black Bean Bowl</li>
+      </ul>
+     <h>Low-carb:</h>
+      <ul>
+          <li>Breakfast: Scrambled Eggs with Spinach</li>
+          <li>Lunch: Tuna Salad</li>
+          <li>Snack: Cheese & Nuts</li>
+          <li>Dinner: Grilled Chicken with Cauliflower Rice</li>
+      </ul>`
+    </div>
+
+    <div id="calendar"></div>
+</div>
+
+<!-- FullCalendar JS -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+
+
+
+  <div class="diet-guidance">
+    <h3>Diet Guidance</h3>
+    <ul>
+      <li>Start your day with a balanced breakfast including proteins and whole grains.</li>
+      <li>Stay hydrated by drinking at least 8 glasses of water daily.</li>
+      <li>Incorporate fresh fruits and vegetables into every meal.</li>
+      <li>Avoid processed foods and opt for natural, whole foods whenever possible.</li>
+      <li>Plan portion sizes to avoid overeating.</li>
+      <li>Include healthy snacks like nuts, seeds, or yogurt between meals.</li>
+      <li>Maintain a consistent eating schedule for better digestion and energy levels.</li>
+    </ul>
+  </div>
+  
+  <div class="recipe-database">
+    <h3>Recipe Database</h3>
+    <p>Explore a variety of recipes tailored to your dietary needs.</p>
+    <div id="recipe-list" style="margin-top: 10px;">
+      <ul>
+        <li>Grilled Chicken Salad - High Protein</li>
+        <li>Vegan Buddha Bowl - Plant-Based</li>
+        <li>Gluten-Free Pancakes - Breakfast</li>
+        <li>Keto Avocado Smoothie - Low Carb</li>
+        <li>Quinoa and Black Bean Bowl - Balanced</li>
+      </ul>
+    </div>
+  </div>
+
+  
+ 
+
+  <div class="additional-features">
+    <h3>Additional Features</h3>
+    <ul>
+      <li>Recipe Suggestions: Browse a collection of healthy recipes with detailed nutritional information.</li>
+      <li>Grocery List Builder: Generate a shopping list based on your meal plans.</li>
+      <li>Dietary Preferences: Filter recipes by dietary needs (e.g., vegan, gluten-free, keto).</li>
+      <li>Progress Tracker: Monitor your calorie intake, weight, and fitness goals.</li>
+      <li>Automated Meal Plans: Get personalized meal plans based on your nutritional requirements.</li>
+      <li>Integration with Fitness Apps: Sync with fitness trackers to combine diet and activity data.</li>
+      <li>Educational Resources: Access articles and tips on nutrition and healthy eating habits.</li>
+    </ul>
+  </div>
+</main>
+
+  <footer>
+    <p class="quote">"Your Health, Our Mission."</p>
+    <div class="social-links">
+        <a href="#">Follow us on Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+  
+

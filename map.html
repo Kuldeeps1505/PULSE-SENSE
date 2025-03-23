@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Hospitals</title>
+    <link rel="stylesheet" href="map.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    
+</head>
+<body>
+    <div class="header1">
+        <h2 class="logo">
+            <div class="content">     
+                <div class="logo">
+                   <img  class="center" src="logo.jpg" height="100" width="100">
+                   <span class="logo-text">Pulse Sense</span>
+               </div>
+        </h2>
+        <nav class="navigation">
+            <a href="home PS.html">Home</a>
+            <a href="home PS.html">About Us</a>
+            <a href="contact PS.html">Contact</a>
+            <a href="login PS.html">Register</a>
+        </nav>
+    </div class="header1">
+    
+    <main>
+        <h1>Nearby Hospitals</h1>
+    <div>
+        <button onclick="toggleEmergencyMode()">Toggle Emergency Mode</button>
+        <br><br>
+       
+        
+    </div>
+    <div id="map" style="height: 600px;"></div>
+    <!-- Link to external JavaScript file -->
+    <script src="script1.js"></script>
+    </main>
+
+    <footer>
+        <p class="quote">"Your Health, Our Mission."</p>
+        <div class="social-links">
+            <a href="#">Follow us on Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </div>
+        <p>&copy; 2024 Stress Releaser Techniques. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

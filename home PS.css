@@ -1,0 +1,250 @@
+
+body {
+    background: linear-gradient(to right, #c6fdff, #fafbfb);
+}
+header {
+    background: linear-gradient(to right, #0f5658, #7ec9c3);
+    color: #fff;
+    text-decoration-color: #ccc;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.logo {
+    margin: 0;
+    
+}
+
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navigation .btnLogin-popup {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about-us-section {
+    background-color: #1b7167;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.initiative-container {
+    background-color: #1b7167;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cpr-box {
+    background-color: #ff6347; 
+}
+
+.health-diary-box {
+    background-color: #5bbb93; 
+}
+
+.diet-plan-box {
+    background-color: #ffa500; 
+}
+
+.appointments-box {
+    background-color: #1e90ff; 
+}
+
+.initiative-box a {
+    text-decoration: none;
+    color: white;
+}
+
+.initiative-box:hover {
+    transform: scale(1.1);
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: white; 
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #a4b6b3; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 15px; 
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.spacer {
+    flex-grow: 1; 
+}
+
+.home-icon {
+    margin-right: 8px; 
+}
+
+
+.welcome-heading {
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: bold;
+    margin-top: 50px; 
+}
+
+
+.content-box {
+    border: 2px solid #ccc; 
+    padding: 20px; 
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+}
+
+
+.tagline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+}
+
+.left-tagline {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right-content {
+    max-width: 60%; 
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6; 
+}
+
+
+.initiative-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+    padding: 0 20px; 
+    flex-wrap: nowrap; 
+}
+
+.initiative-box {
+    border: 2px solid #ccc;
+    padding: 30px; 
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    height: 250px; 
+    width: 180px; 
+    margin: 0 10px; 
+}
+
+.initiative-box a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+
+.initiative-box a:hover {
+    text-decoration: underline;
+}
+
+.initiative-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #0f5658, #a4f1eb);
+}
+
+footer .quote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .initiative-container {
+        flex-direction: column;
+        align-items: center; 
+        padding: 0 10px; 
+    }
+
+    .initiative-box {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 10px;
+    }
+}

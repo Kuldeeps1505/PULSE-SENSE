@@ -1,0 +1,169 @@
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #c6fdff, #ffffff);
+}
+
+header {
+    background: linear-gradient(to right, #0f5658, #7ec9c3);
+    color: #fff; 
+    text-decoration-color: #ccc;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.logo {
+    margin: 0;
+    
+    
+}
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navigation .btnLogin-popup {
+    background-color: #145247;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+label, select, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#calendar {
+    margin-top: 20px;
+}
+
+.meal-plan, .progress-tracker {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e3f2fd;
+    border-left: 5px solid #2196F3;
+}
+
+.progress-tracker {
+    background-color: #fff8e1;
+    border-left: 5px solid #ff9800;
+}
+
+.progress-tracker p {
+    font-weight: bold;
+}
+  
+
+  .diet-guidance {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #4CAF50;
+  }
+
+  .additional-features {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff8e1;
+    border-left: 5px solid #ff9800;
+  }
+
+  .calendar {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    cursor: pointer;
+  }
+
+  .meal-plan, .recipe-database, .progress-tracker, .dietary-preferences {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e3f2fd;
+    border-left: 5px solid #2196F3;
+  }
+
+  .meal-plan button, .recipe-database button, .progress-tracker button, .dietary-preferences button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .meal-plan button:hover, .recipe-database button:hover, .progress-tracker button:hover, .dietary-preferences button:hover {
+    background-color: #1976D2;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #0f5658, #a4f1eb);
+}
+
+footer .quote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+

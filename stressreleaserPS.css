@@ -1,0 +1,140 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; 
+            text-align: center;
+            background: linear-gradient(to right, #c6fdff, #ffffff);
+        }
+        header {
+            background: linear-gradient(to right, #0f5658, #7ec9c3);
+            color: #fff;
+            text-decoration-color: #ccc;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        
+        h1 {
+          text-decoration-color: azure;
+        }
+        .logo {
+            margin: 0;
+            
+        }
+        .logo-text {
+            color: white; 
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .navigation .btnLogin-popup {
+            background-color: #004d40;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: black;
+        }
+        .technique {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .technique img {
+            width: 200px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+            
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to right, #0f5658, #7ec9c3);
+            height: 12vh;
+        }
+
+        footer .quote {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        footer .social-links {
+            margin-top: 10px;
+        }
+        
+        footer .social-links a {
+            color: black;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        footer .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        #meditation {
+            background-color: #8ecac3;
+        }
+        #exercise {
+            background-color: #8ecac3;
+            
+        }
+        #nature {
+            background-color: #8ecac3;
+        }
+        #hobbies {
+            background-color: #8ecac3;
+        }
+
+
+
+       
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .images a {
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+        .images a:hover img {
+            animation: bounce 0.6s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        .technique img {
+            width: 300px; /* Adjust the width as needed */
+            height: 200px; /* Maintain aspect ratio */
+        }

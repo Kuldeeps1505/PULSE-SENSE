@@ -1,0 +1,89 @@
+
+ <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - HealthCare Portal</title>
+    <link rel="stylesheet" href="App.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src='App.js'></script>
+</head>
+<body>
+    <header>
+        <h2 class="logo">
+            <div class="content">     
+                <div class="logo">
+                   <img  class="center" src="logo.jpg" height="100" width="100">
+                   Pulse Sense 
+               </div>
+        </h2>
+        <nav class="navigation">
+            <a href="home PS.html">Home</a>
+            <a href="home PS.html">About Us</a>
+            <a href="contact PS.html">Contact</a>
+            <a href="login PS.html">
+                <button>Register</button></a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="register-container" id="registerForm">
+            <form id="register" onsubmit="return handleRegister(event)">
+                <h2>Heart Rate Input </h2>
+
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">User Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Age Field -->
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required min="1" max="120">
+                </div>
+
+                <!-- Gender Field -->
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Contact Number Field -->
+                <div class="form-group">
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" pattern="^\d{10}$" required placeholder="Enter 10-digit phone number">
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="Heart Rate">Heart Rate </label>
+                    <input type="number" id="number" name="Heart Rate" required>
+                </div>
+
+                <button type="submit">Submit</button>
+                <p id="error-message" class="error-message"></p>
+            </form>
+        </div>
+    </main>
+
+    
+
+    <footer>
+        <p class="quote">"Your Health, Our Mission."</p>
+        <div class="social-links">
+            <a href="#">Follow us on Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

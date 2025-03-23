@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: linear-gradient(to right, #c6fdff, #e5fafb);
+}
+
+header {
+    background: linear-gradient(to right, #0f5658, #7ec9c3);
+    color: #fff;
+    text-decoration-color: #ccc;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.logo {
+    margin: 0;
+    
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.navigation {
+    margin-top: 10px;
+}
+
+.navigation a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.btnLogin-popup {
+    background-color: #195b55;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnLogin-popup:hover {
+    background-color: #5bef96;
+}
+
+
+.contact-form-container {
+    width: 50%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-form-container h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #318374;
+    color: rgb(4, 48, 23);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 60%;
+    font-weight: bold;
+}
+
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background:linear-gradient(to right, #0f5658, #a4f1eb);
+}
+footer .quote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .initiative-container {
+        flex-direction: column;
+        align-items: center; 
+        padding: 0 10px; 
+    }
+
+    .initiative-box {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 10px;
+    }
+}

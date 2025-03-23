@@ -1,0 +1,162 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: linear-gradient(to right, #c6fdff, #e5fafb);
+}
+
+.header1 {
+    background: linear-gradient(to right, #0f5658, #7ec9c3);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Push logo to left, navigation to right */
+    font-family: sans-serif;
+    height: 15vh;
+}
+
+
+
+/* Button Base Styles */
+button {
+    padding: 14px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 60px;
+
+}
+
+/* Emergency Mode Button */
+#emergencyModeButton {
+    background: linear-gradient(135deg, #ff5c5c, #e74c3c); /* Gradient for a modern look */
+    color: white;
+}
+
+#emergencyModeButton:hover {
+    background: linear-gradient(135deg, #c0392b, #e74c3c); /* Darker on hover */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Regular Search Button */
+button:not(#emergencyModeButton) {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    font-weight: normal;
+}
+
+button:not(#emergencyModeButton):hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Start Navigation Button */
+#startNavButton {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+}
+
+#startNavButton:hover {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.navigation {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between navigation links */
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #004d40; /* Change color on hover */
+}
+
+/* Register Button */
+.navigation .btnLogin-popup {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navigation .btnLogin-popup:hover {
+    background-color: #00332a; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+    .header1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation a {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .navigation .btnLogin-popup {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #0f5658, #a4f1eb);
+}
+
+footer .quote {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+
